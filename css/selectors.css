@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+
+html{
+    font-size:16px;
+}
+body{
+    background-color: rgb(231, 228, 228);
+    font-family: "Calibri", "Trebuchet MS", sans-serif;
+    color: rgb(70, 69, 69);
+    margin:0;
+    line-height: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(143, 96, 96);
+}
+
+a:hover{
+    color: rosybrown;
+}
+
+
+h1{
+    font-family: 'Viga', sans-serif;
+    font-size: 3.5rem;
+    color:whitesmoke;
+    width: 80%;
+    margin-top:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    color:whitesmoke;
+    font-size: 1.2rem;
+    font-family: 'Viga', sans-serif;
+}
+
+header{
+    background-color: rgb(23, 27, 23);
+    padding-top:1.2rem;
+    min-height:3rem;
+}
+
+main{
+    width:80%;
+    margin: 2rem auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1rem;
+}
+section > img{
+    width:100%;
+}
+
+section > p {
+    color: rgb(141, 140, 140);
+}
+
+article:first-child h2{
+    margin-top:0;
+    background-color: #222;
+    color:#eee;
+}
+article:last-child h2{
+
+    background-color: rgb(134, 133, 133);
+    color:#eee;
+}
+
+article > h2{
+    background-color: rgb(85, 84, 84);
+}
+  /* For tablets: */
+  @media (max-width: 1040px) {
+    main{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+    h1{
+        font-size:3.2rem;
+    }
+}
+  /* For mobile: */
+@media (max-width: 640px) {
+   main{
+    display:grid;
+    grid-template-columns: 1fr;
+   }
+   h1{
+    font-size:3rem;
+
+   }
+  }
+
+
